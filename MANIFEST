@@ -12,23 +12,24 @@ INSTALL
 lib/Math/BigRat.pm
 LICENSE
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
 MANIFEST.SKIP
-META.yml			# Module meta-data (added by MakeMaker)
+META.yml
 README
-SIGNATURE
-t/big_ap.t			# do Big(Float|Int)'s A/P interfere w/ Rat?
-t/bigfltpm.inc			# BigFloat's testsuite
-t/bigfltrt.t			# run BigRat through BigFloat's testsuite
+t/big_ap.t
+t/bigfltpm.inc
+t/bigfltrt.t
 t/biglog.t
-t/bigrat.t			# test big rationales like 7/5
-t/bigratpm.inc			# actual BigRat tests
-t/bigratpm.t			# native BigRat testsuite
-t/bigratup.t			# test under $Math::BigInt::upgrade
+t/bigrat.t
+t/bigratpm.inc
+t/bigratpm.t
+t/bigratup.t
 t/bigroot.t
-t/Math/BigRat/Test.pm		# test class for BigFloat compatible output
-t/pod.t				# test that the POD is wellformed
-t/pod_cov.t			# test that the POD covers all public functions
-t/requirer.t			# see if require works properly
-t/trap.t			# see if trap_nan and trap_inf work
+t/hang.t
+t/Math/BigRat/Test.pm
+t/pod.t
+t/pod_cov.t
+t/requirer.t
+t/trap.t
 TODO
+SIGNATURE                                Public-key signature (added by MakeMaker)

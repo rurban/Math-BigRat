@@ -1,16 +1,19 @@
 ---
-abstract: Arbitrary big rational numbers
+abstract: 'Arbitrary big rational numbers'
 author:
-  - 'Tels <nospam-abuse@bloodgate.com>'
+  - '(C) by Tels L<http://bloodgate.com/> 2001 - 2009.'
+  - 'Jonathan Leto <jonathan@leto.net>'
 build_requires:
+  ExtUtils::MakeMaker: 6.42
   Test::More: 0.47
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: Module::Install version 0.68
-installdirs: perl
+generated_by: 'Module::Install version 1.00'
 license: perl
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.3.html
-  version: 1.3
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: Math-BigRat
 no_index:
   directory:
@@ -18,5 +21,7 @@ no_index:
     - t
 requires:
   Math::BigInt: 1.88
-  perl: 5.6.0
-version: 0.21
+  perl: 5.006
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.25

@@ -19,10 +19,12 @@ build_requires	'Test::More'	=> 0.47;
 
 license		'perl';
 
-author		'Tels <nospam-abuse@bloodgate.com>';
+author		'Jonathan Leto <jonathan@leto.net>';
 
 # install this over the version in the Perl core
 install_as_core;
+
+sign;
 
 # Generate the Makefile
 WriteAll;

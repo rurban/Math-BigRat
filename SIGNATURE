@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.55.
+signed via the Module::Signature module, version 0.66.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -15,46 +15,43 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 21e6d61fb0134d6e9909c464cd5894083b1f32c7 BUGS
-SHA1 52aee73faa3033146928616e7fa84d6b306f040c CHANGES
+SHA1 4ee0f673cdd16836aa16af9ef5e65d8b5a8e8aa6 CHANGES
 SHA1 45554f2da419f19f59014dab3489f34a45072279 INSTALL
 SHA1 d6a6c30ee6d9ba6b9afab8bbf6a25e1b23c744e0 LICENSE
-SHA1 61ff1582b845bec545b25fa7e0a233a98822eab7 MANIFEST
-SHA1 9e11cdd7a009fed0f03c8dd1480e3806914db4d7 MANIFEST.SKIP
-SHA1 2f39a0c67ea4b2bd87116dbc697353546564c01d META.yml
-SHA1 1a189178447335c2e9cc800f5cd0588ddec68f05 Makefile.PL
+SHA1 f191cc691ec4e66baead0d481a2a49b0848cd736 MANIFEST
+SHA1 bb107f387d1210fbef85b7ec2f0e0fc266c0a408 MANIFEST.SKIP
+SHA1 e6853771e947282a474c3266a4730e121e12a1d4 META.yml
+SHA1 bf7c4a8d806b9232e356b34cf2e3e9f5687271ae Makefile.PL
 SHA1 e4ce2ac6577dd4f9c1bd869fe79b575f56afa578 README
-SHA1 e1690c1c103d9a76cf7e480566c9989183f84a1c TODO
-SHA1 d8f6d2df4e75cb9e6e77a8377457f0ececd00e31 inc/Module/Install.pm
-SHA1 03590cde5c3de0d0d8a84d2b96917ed1a2cf9a30 inc/Module/Install/Base.pm
-SHA1 8ef3c70e905be7d1007b446f21d4eb3ff6ae24cb inc/Module/Install/Can.pm
-SHA1 79054604a1cd4e99443b05cbb62832568a204a33 inc/Module/Install/Fetch.pm
-SHA1 dfa433f2f41d990946f1b3d68a29299539f2dea6 inc/Module/Install/Makefile.pm
-SHA1 72cab336b6be5716aae0a1cb6d9add6c98a7a1f5 inc/Module/Install/Metadata.pm
-SHA1 35a62725a7eade0fa617ef2ba4cf2f4d4a69a3fe inc/Module/Install/Win32.pm
-SHA1 19dcc6d1e9f02c56d3f6d184642f4cd68aa371e6 inc/Module/Install/WriteAll.pm
-SHA1 62c18e27876fefaed1adb2f6f55b23e0ad6f67db lib/Math/BigRat.pm
+SHA1 eeb73cb2b02b0ffcd3fd320f9b49ca4038c3e32c TODO
+SHA1 7305dbe2904416e28decb05396988a5d51d578be inc/Module/Install.pm
+SHA1 129960509127732258570c122042bc48615222e1 inc/Module/Install/Base.pm
+SHA1 cf3356ed9a5bd2f732527ef9e7bc5ef4458c8a93 inc/Module/Install/Can.pm
+SHA1 bf0a3e1977effc2832d7a813a76dce3f31b437b6 inc/Module/Install/Fetch.pm
+SHA1 b721c93ca5bc9a6aa863b49af15f1b1de6125935 inc/Module/Install/Makefile.pm
+SHA1 026cc0551a0ad399d195e395b46bdf842e115192 inc/Module/Install/Metadata.pm
+SHA1 5457015ea5a50e93465bf2dafa29feebd547f85b inc/Module/Install/Win32.pm
+SHA1 051e7fa8063908befa3440508d0584a2497b97db inc/Module/Install/WriteAll.pm
+SHA1 2793fac6327a294e7bf20eedccf78b44e0e174de lib/Math/BigRat.pm
 SHA1 10a4e077d8b5c267fdde22be32619d9d23bded3b t/Math/BigRat/Test.pm
 SHA1 aa8ee80ffa9174294604ac6246fdbe082738e9ac t/big_ap.t
-SHA1 8f0966ec726f8d0475a3344d75553d2287ea96eb t/bigfltpm.inc
+SHA1 897b556db401637a769c05a03e4e5eef019375ec t/bigfltpm.inc
 SHA1 5b1fd31c7362d89f3bf247680a5e24fd6b63b4b0 t/bigfltrt.t
-SHA1 ab8411aa5ae8093d48a5a58c15d5bdfa4769eee6 t/biglog.t
-SHA1 486d349dcf0fc19bf5c7fe17aa89a6c285a0120a t/bigrat.t
+SHA1 2f408b8cf42d9c3711ccdf60f5060500ad14a9a5 t/biglog.t
+SHA1 e16c0a90326453f54dd7615bf2ed49cf4f745588 t/bigrat.t
 SHA1 95b56d11e493aca96123854a02660b090f1399a5 t/bigratpm.inc
 SHA1 b60756f4b566888e55b34cf5e7b11a4f376e0854 t/bigratpm.t
 SHA1 3408180abd05091eafda8e46b8275ac3581d99ed t/bigratup.t
-SHA1 e6e0bd0cad04e57aa3e2681debf0a943542d581a t/bigroot.t
+SHA1 7eee0854bc2e0e35c2b9a6b8acb4bb3ccbb77f98 t/bigroot.t
+SHA1 158b2af59232f6b3fbd29bf0363467c8c9bbc6d2 t/hang.t
 SHA1 54e5fe75f1f5c0718e21b59c12a48ec6a0487256 t/pod.t
 SHA1 d2f440d577dfaa51c3205e22c5a819bb3a670cc0 t/pod_cov.t
 SHA1 f9ca8eb694e22414ce7571ad046bf92fca122306 t/requirer.t
 SHA1 ab00cdfe98f95fd5434e95fe8a86a013b3ad773f t/trap.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
+Version: GnuPG v1.4.10 (GNU/Linux)
 
-iQEVAwUBR/eT23cLPEOTuEwVAQIvIQf+KJrl/peDQiczmcD25ZTm6Up7xlEFDgXx
-RBQyH0c5dIMUTgycnd+Rxs8kDkm54JoYYOdump7vUpjKouSPW8yl/WSTQff1n0RD
-xAX1xNqMs0mWvYhg3mqUMyZhKplvJkClqFGMEl4jFX8pR+c4qaZBfasEjA+a+uRE
-PIvR9VPsY98cruhmeLP+QOMg4QkBzQXSXupBAja7/+j4knBNDxfAMnpJcBvKUm+p
-oBbx+xadcb54G+Kj19OhfS9tMql1CGvG2mWGFAilIcB36mDIIHxolM+j41L5k0Eh
-Q4kVsKiBQPTmTYgE1X+HOOcCGaPh3mt06mtJwQ36uMD5gt0qSPnMoA==
-=plYm
+iEYEARECAAYFAkyOUcoACgkQdC8qQo5jWl6PlQCbBFZrJQ0LcHmaDLGscUglUn+F
+WrIAn3/p4Fm4GkbXVaJkSSoOaqAQBksu
+=Deji
 -----END PGP SIGNATURE-----
