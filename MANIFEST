@@ -16,6 +16,10 @@ MANIFEST			This list of files
 MANIFEST.SKIP
 META.yml
 README
+t/00sig.t
+t/01load.t
+t/02pod.t
+t/03podcov.t
 t/big_ap.t
 t/bigfltpm.inc
 t/bigfltrt.t
@@ -25,10 +29,9 @@ t/bigratpm.inc
 t/bigratpm.t
 t/bigratup.t
 t/bigroot.t
+t/bitwise.t
 t/hang.t
 t/Math/BigRat/Test.pm
-t/pod.t
-t/pod_cov.t
 t/requirer.t
 t/trap.t
 TODO

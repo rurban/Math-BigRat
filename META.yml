@@ -20,8 +20,8 @@ no_index:
     - inc
     - t
 requires:
-  Math::BigInt: 1.88
+  Math::BigInt: 1.991
   perl: 5.006
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.26
+version: 0.2602
