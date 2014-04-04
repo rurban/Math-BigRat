@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,25 +14,26 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 21e6d61fb0134d6e9909c464cd5894083b1f32c7 BUGS
-SHA1 55f387aea4774b603b9fc67edf48f7f61faba6ad CHANGES
+SHA1 dfc568c4c9524095fd593e625b0fbc1161a19a9b BUGS
+SHA1 1b345d89fd13b4f906c827eab17a8a565b8d0518 CHANGES
 SHA1 45554f2da419f19f59014dab3489f34a45072279 INSTALL
 SHA1 d6a6c30ee6d9ba6b9afab8bbf6a25e1b23c744e0 LICENSE
-SHA1 09f3bab68bb17e02ff89d16db4f36be5f2492de1 MANIFEST
-SHA1 bb107f387d1210fbef85b7ec2f0e0fc266c0a408 MANIFEST.SKIP
-SHA1 914a430c4f73da9866be3feab2c9fa1362c289b4 META.yml
+SHA1 ffe815b79e91e3857cd5acc1f5cac43ab40398d5 MANIFEST
+SHA1 bd4ccb06fb3451d833350fdb4bd15e584c805cec MANIFEST.SKIP
+SHA1 72314cdc551aafae5942708412295178596d8000 META.json
+SHA1 7ccf7d4fa0f954a5b1c23ae45575c2a5cf6e5680 META.yml
 SHA1 bf0af61e6f49695ac4f100e4888bde5ab0e30f28 Makefile.PL
 SHA1 e4ce2ac6577dd4f9c1bd869fe79b575f56afa578 README
 SHA1 eeb73cb2b02b0ffcd3fd320f9b49ca4038c3e32c TODO
-SHA1 7305dbe2904416e28decb05396988a5d51d578be inc/Module/Install.pm
-SHA1 129960509127732258570c122042bc48615222e1 inc/Module/Install/Base.pm
-SHA1 cf3356ed9a5bd2f732527ef9e7bc5ef4458c8a93 inc/Module/Install/Can.pm
-SHA1 bf0a3e1977effc2832d7a813a76dce3f31b437b6 inc/Module/Install/Fetch.pm
-SHA1 b721c93ca5bc9a6aa863b49af15f1b1de6125935 inc/Module/Install/Makefile.pm
-SHA1 026cc0551a0ad399d195e395b46bdf842e115192 inc/Module/Install/Metadata.pm
-SHA1 5457015ea5a50e93465bf2dafa29feebd547f85b inc/Module/Install/Win32.pm
-SHA1 051e7fa8063908befa3440508d0584a2497b97db inc/Module/Install/WriteAll.pm
-SHA1 6567b613d918901669ab34ab604c50f19e29a4b8 lib/Math/BigRat.pm
+SHA1 dc13ce0dbb488a5de81c3f6519ee31acda17397a inc/Module/Install.pm
+SHA1 91c20cbda8ca41b4e8f9e0390faff635c2ebe839 inc/Module/Install/Base.pm
+SHA1 eaf50ccbacecb797f0527deb0221c8264f6c8bd8 inc/Module/Install/Can.pm
+SHA1 363c8931cc183444907684b71d6a379e4fc8edcb inc/Module/Install/Fetch.pm
+SHA1 26ae1c0f5f352037b560414f216d7e3ac682f936 inc/Module/Install/Makefile.pm
+SHA1 ff97eb025b44c343d026c2a56a73d50c65319e95 inc/Module/Install/Metadata.pm
+SHA1 4c5ce519d404e242418f51dfe761287469e18e3a inc/Module/Install/Win32.pm
+SHA1 47a52cf8719a283c0efa2edab0088b5d67e0f23a inc/Module/Install/WriteAll.pm
+SHA1 2c94e80ca0be432de33a0fb7e8f7c98de223cd00 lib/Math/BigRat.pm
 SHA1 6e9557e746e881ab1568cdcec17ff3c4f1508502 t/00sig.t
 SHA1 d044d8cd7e63ebc7ed20b8e9dc82b34ea0c079de t/01load.t
 SHA1 02ef05af53cb7378452590324bb21dfe61f44069 t/02pod.t
@@ -42,7 +43,7 @@ SHA1 800aef9a654ca5b9507a3fdbfb91c19de3af3387 t/big_ap.t
 SHA1 12dba326f6091a6f4cbba3e35c79f47b993b6206 t/bigfltpm.inc
 SHA1 f4672f895d157e618fccbac54a98f96801d6f05b t/bigfltrt.t
 SHA1 cac8ffadc43c5b5fe9b1988eeff1352100c87a66 t/biglog.t
-SHA1 37b689c11ce4d718f9b9de36b3ff93ccf329477c t/bigrat.t
+SHA1 8d71e946854e9f164b2671cb34d92e5b3ed3abce t/bigrat.t
 SHA1 d48d1f15292c4a6782b266df887fa5800a0a6bb8 t/bigratpm.inc
 SHA1 40a83e7e9a5667bce5830fef0eb491fe1b57e913 t/bigratpm.t
 SHA1 faa979297abb2ac84fb413c193c1d620948bf24d t/bigratup.t
@@ -52,9 +53,13 @@ SHA1 100f681daf1e859c2e82b41c358e8966874bd0cd t/hang.t
 SHA1 91b62942edeb3f93c8cc4893e1e4b984561f46c5 t/requirer.t
 SHA1 1a2f73c91cd6a59874b9321a498f966700cb1049 t/trap.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.9 (Cygwin)
+Version: GnuPG v1
 
-iEYEARECAAYFAk1YFwUACgkQVQvyyU1bchoUuwCeJ3sdqcKzy5gtpgqC9XDqZCF6
-JHQAnjpeDrNWPranrw1qP15RGKyS+D1v
-=ua93
+iQEcBAEBAgAGBQJTPozyAAoJEGcmPl2fr166nN8IAIuBnCGwaBZesHpFRcFCX+3z
+H6PipaSWwOhDMfnONCx4ERf3zUCZUOCGO0n0GiPD/1F5dGvBDfZqQCmCRMPQEglj
+uJ9Mr217OO8md8vMoz8cCtA1nJWz2KPRI6vEd2DqqLV0ZtqV09MOYgaHRnsScO/c
+2BvszCydd8YHE5AWB6ItmwU2oKTZ4uXyJxgoCg+NFvKG1sqNh+B+CNYoxpUnSnU/
+bvvcPcW9vmFg0Ge6pV8h0xxl0qpSKWvioZLUdLLvDKWM2Mm99iprgIfKNeBRVaSx
+GsV0TOizceftlsmYRutR6PoC15T7qfYVJLZfqs87I5WdxiJCGQlC8WO8O/qjjoc=
+=8Si7
 -----END PGP SIGNATURE-----

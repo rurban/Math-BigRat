@@ -1,27 +1,24 @@
 ---
 abstract: 'Arbitrary big rational numbers'
 author:
-  - '(C) by Tels L<http://bloodgate.com/> 2001 - 2009.'
-  - 'Jonathan Leto <jonathan@leto.net>'
+  - '(C) by Tels L<http://bloodgate.com/> 2001 - 2009., Jonathan Leto <jonathan@leto.net>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
-  Test::More: 0.47
+  ExtUtils::MakeMaker: '6.59'
+  Test::More: '0.47'
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 1.00'
+  ExtUtils::MakeMaker: '0'
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.94, CPAN::Meta::Converter version 2.140640'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Math-BigRat
 no_index:
   directory:
-    - inc
     - t
+    - inc
 requires:
-  Math::BigInt: 1.991
-  perl: 5.006
-resources:
-  license: http://dev.perl.org/licenses/
-version: 0.2602
+  Math::BigInt: '1.991'
+  perl: '5.006'
+version: '0.2606'
