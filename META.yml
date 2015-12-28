@@ -1,7 +1,7 @@
 ---
 abstract: 'Arbitrary big rational numbers'
 author:
-  - '(C) by Tels L<http://bloodgate.com/> 2001 - 2009., Jonathan Leto <jonathan@leto.net>'
+  - '(C) by Tels L<http://bloodgate.com/> 2001 - 2009., Peter John Acklam <pjacklam@gmail.com>'
 build_requires:
   ExtUtils::MakeMaker: '6.59'
   Test::More: '0.47'
@@ -21,5 +21,5 @@ no_index:
 requires:
   Math::BigInt: '1.991'
   perl: '5.006'
-version: '0.260801'
+version: '0.260802'
 x_serialization_backend: 'CPAN::Meta::YAML version 0.016'

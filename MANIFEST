@@ -29,6 +29,7 @@ t/bigratpm.t
 t/bigratup.t
 t/bigroot.t
 t/bitwise.t
+t/blog-mbr.t
 t/hang.t
 t/Math/BigRat/Test.pm
 t/requirer.t
