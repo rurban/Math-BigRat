@@ -19,6 +19,8 @@ t/00sig.t
 t/01load.t
 t/02pod.t
 t/03podcov.t
+t/author-blog-mbr.t
+t/author-relop-mbr.t
 t/big_ap.t
 t/bigfltpm.inc
 t/bigfltrt.t
@@ -29,7 +31,6 @@ t/bigratpm.t
 t/bigratup.t
 t/bigroot.t
 t/bitwise.t
-t/blog-mbr.t
 t/hang.t
 t/Math/BigRat/Test.pm
 t/requirer.t

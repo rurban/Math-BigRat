@@ -19,7 +19,7 @@ no_index:
     - t
     - inc
 requires:
-  Math::BigInt: '1.991'
+  Math::BigInt: '1.999718'
   perl: '5.006'
-version: '0.260802'
-x_serialization_backend: 'CPAN::Meta::YAML version 0.016'
+version: '0.260803'
+x_serialization_backend: 'CPAN::Meta::YAML version 0.018'
