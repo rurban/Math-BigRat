@@ -1,10 +1,9 @@
 ---
-abstract: 'Arbitrary big rational numbers'
+abstract: unknown
 author:
-  - '(C) by Tels L<http://bloodgate.com/> 2001 - 2009., Peter John Acklam <pjacklam@gmail.com>'
+  - 'Peter John Acklam <pjacklam@gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: '6.59'
-  Test::More: '0.82'
+  ExtUtils::MakeMaker: '0'
 configure_requires:
   ExtUtils::MakeMaker: '0'
 dynamic_config: 1
@@ -20,6 +19,7 @@ no_index:
     - inc
 requires:
   Math::BigInt: '1.999718'
+  Test::More: '0.82'
   perl: '5.006'
-version: '0.260805'
+version: '0.2609'
 x_serialization_backend: 'CPAN::Meta::YAML version 0.018'

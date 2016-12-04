@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.80.
+signed via the Module::Signature module, version 0.81.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,31 +14,22 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 dfc568c4c9524095fd593e625b0fbc1161a19a9b BUGS
-SHA1 527d6708528ccc93070adf1714c134dbc5bf5b4c CHANGES
-SHA1 45554f2da419f19f59014dab3489f34a45072279 INSTALL
-SHA1 d6a6c30ee6d9ba6b9afab8bbf6a25e1b23c744e0 LICENSE
-SHA1 585b42db608dbafc1fc5709599788c4aae61a4c7 MANIFEST
+SHA1 27f73198e217423061ddce2fc7c23db5724e3cd4 BUGS
+SHA1 a2d616ef5c291f3fe5160b6940259577d03c0832 CHANGES
+SHA1 d7c83d8f89b92a3262a01eb2778d39402e77263a LICENSE
+SHA1 a2ed822b605636b0e9885b7ddc0c036086300c50 MANIFEST
 SHA1 bd4ccb06fb3451d833350fdb4bd15e584c805cec MANIFEST.SKIP
-SHA1 bea8f9ad4e9f6d6a2cf39cd56209437a72aca036 META.json
-SHA1 38bdd9477b8ead524033ae20092b39c7aa40a17c META.yml
-SHA1 4dc90c15ee39f268080beae740e28175226138a5 Makefile.PL
-SHA1 e4ce2ac6577dd4f9c1bd869fe79b575f56afa578 README
-SHA1 eeb73cb2b02b0ffcd3fd320f9b49ca4038c3e32c TODO
-SHA1 05a17c51aceb6435a1eac17137f19911a09e5050 inc/Module/Install.pm
-SHA1 dc73c2baf4357ad1cc884146147f557a50a29300 inc/Module/Install/Base.pm
-SHA1 c7f311a5bc5a7f96e9105d5f16a0e13fc596899d inc/Module/Install/Can.pm
-SHA1 8c8f9ff5b0a536af59814e16a901ce39fbc23299 inc/Module/Install/Fetch.pm
-SHA1 4f77eb02e104324b08a047585c498146b045613b inc/Module/Install/Makefile.pm
-SHA1 2f5be6af6098acf6d786a4a7299a34d0c6c04ef9 inc/Module/Install/Metadata.pm
-SHA1 aa6723cc4a8d4475026f6ceb28e1f16459e8a11b inc/Module/Install/Win32.pm
-SHA1 6661285caedfe012cb5a1ca915a422ffc292ae2b inc/Module/Install/WriteAll.pm
-SHA1 d0c3967afafe8a1b50319b52adf0eeeb63298de8 lib/Math/BigRat.pm
+SHA1 da1404cf11849e893d795adc5a1de8285d19fe3d META.json
+SHA1 1fc6045547c5f68f104e3e610ccb3f4a0c123dd9 META.yml
+SHA1 b034daa49c581eb293bb6503c680598e82dca61e Makefile.PL
+SHA1 b6fa6ca5e4f70bd49f1e7d6a3cde3cd9e01936f5 README
+SHA1 2f2aa6a1b56f1b31bcffc30399813768ea310747 TODO
+SHA1 b0876666d1ee07e8bcfc20895d1a3be80ecbdda6 lib/Math/BigRat.pm
 SHA1 269da3400f1967b91dc3b6dd97fecd46b3242aee t/00sig.t
 SHA1 bc4d299a2e45cc68c9eb737e5a8f31bcfbf192ee t/01load.t
 SHA1 237e24044b9cc602f739d4eff3f6f1bd3b51f16e t/02pod.t
 SHA1 b8c080d10916f6def84488665294efd351484730 t/03podcov.t
-SHA1 0d869c5e8d7835c91b5011c0d71937c2b899439a t/Math/BigRat/Test.pm
+SHA1 0729dd26a48eac5e596d19b39f21c5d582479fe4 t/Math/BigRat/Test.pm
 SHA1 b6ab5e829a13f0f817f5767b1e6a4f976b3c3a32 t/author-blog-mbr.t
 SHA1 6ea87e1558998780c460e157381459697ad9e66c t/author-relop-mbr.t
 SHA1 b03c383e8318d3540650ed790c5a2ab86adf6009 t/big_ap.t
@@ -56,11 +47,11 @@ SHA1 3d2f66d534b29d1612427f280be8bb4fb20d18e4 t/requirer.t
 SHA1 bec1ee4ff69fa1927f542f488244fad188c6e06b t/trap.t
 -----BEGIN PGP SIGNATURE-----
 
-iQEcBAEBAgAGBQJYK2pDAAoJEGcmPl2fr166pzUIANlgOTy3LkS1kqIv/c7FC5fv
-At3Mn1hNGKbMj8ux9m5o7qVYoebcR8mmNyH9UggFCmCqLIzJSXOBD9Gr2JR7tCdq
-s0UgcJZBYdpzV8MA+wwIq/rJh44bgoS4OBOYyZz00L5wUbayBdFjOAfR6g454LDx
-w2etVp47YwfwM76JY/a6VjW1M2iYu9Iqny3JB3JbgK54jBmyq5Fv6TakopIthjJj
-p/QdrromGtWY2Je8wIE5oZOlFc3zSaGRPaxKFBVuwZ46rJfx2qJSK1zN33tbPKtS
-Mvli87hJnewjRzDaZBbcwIKQua/ahAjs8IkogeSI9Ac9N9hyue9gBHzLIfBY7Q0=
-=5hn1
+iQEcBAEBAgAGBQJYQ9fcAAoJEGcmPl2fr166DScIAJCgHlFaBQyKr5Ji+VLw0yN0
+RNgIuwehtwdvoNPUfpkdiln1eOBuqv3WV0tBonCU1CxEIpjWDVpwbMcr9uyeB+zs
+7s9+HyG4mlbNF633Vkh3T3ARbWxHmhf07kU9zKyx0lzrDKH0M+tLiE/geMmLZZRv
+jJ85e9gUOmgmJIxBCgFEPSDtgJ5ffUEBY9tAZ+xRgoj1A9SNo0CYVfgAJxyghMso
+MgJ4Map/y+U2v5Wf6g3Fo1PBfS3WDU+l2tYRvKvC4cmrsuuW6QJgzoraDEuyMxrW
+tOoOqYRyVxui4pWZKQAzwn6+G99M9c8aLCShLRR7GZm45dHAO2EtMY+tnESByAk=
+=vDb1
 -----END PGP SIGNATURE-----
