@@ -16,7 +16,7 @@ use 5.006;
 use strict;
 use warnings;
 
-use Carp qw< carp croak >;
+use Carp ();
 
 use Math::BigFloat 1.999718;
 
@@ -246,17 +246,17 @@ sub new {
     # Check the way we are called.
 
     if ($protoref) {
-        croak("new() is a class method, not an instance method");
+        Carp::croak("new() is a class method, not an instance method");
     }
 
     if (@_ < 1) {
-        #carp("Using new() with no argument is deprecated;",
+        #Carp::carp("Using new() with no argument is deprecated;",
         #           " use bzero() or new(0) instead");
         return $class -> bzero();
     }
 
     if (@_ > 2) {
-        carp("Superfluous arguments to new() ignored.");
+        Carp::carp("Superfluous arguments to new() ignored.");
     }
 
     # Get numerator and denominator. If any of the arguments is undefined,
@@ -267,7 +267,7 @@ sub new {
     if (@_ == 1 && !defined $n ||
         @_ == 2 && (!defined $n || !defined $d))
     {
-        #carp("Use of uninitialized value in new()");
+        #Carp::carp("Use of uninitialized value in new()");
         return $class -> bzero();
     }
 
@@ -550,7 +550,7 @@ sub bnan {
     $self = bless {}, $class unless $selfref;
 
     if ($_trap_nan) {
-        croak ("Tried to set a variable to NaN in $class->bnan()");
+        Carp::croak ("Tried to set a variable to NaN in $class->bnan()");
     }
 
     $self -> {sign} = $nan;
@@ -574,7 +574,7 @@ sub binf {
     $sign = defined($sign) && substr($sign, 0, 1) eq '-' ? '-inf' : '+inf';
 
     if ($_trap_inf) {
-        croak ("Tried to set a variable to +-inf in $class->binf()");
+        Carp::croak ("Tried to set a variable to +-inf in $class->binf()");
     }
 
     $self -> {sign} = $sign;
@@ -682,10 +682,10 @@ sub bnorm {
 
     # Both parts must be objects of whatever we are using today.
     if (my $c = $LIB->_check($x->{_n})) {
-        croak("n did not pass the self-check ($c) in bnorm()");
+        Carp::croak("n did not pass the self-check ($c) in bnorm()");
     }
     if (my $c = $LIB->_check($x->{_d})) {
-        croak("d did not pass the self-check ($c) in bnorm()");
+        Carp::croak("d did not pass the self-check ($c) in bnorm()");
     }
 
     # no normalize for NaN, inf etc.
@@ -739,7 +739,7 @@ sub _bnan {
         # partial object (happens under trap_nan), so fix it beforehand
         $self->{_d} = $LIB->_zero() unless defined $self->{_d};
         $self->{_n} = $LIB->_zero() unless defined $self->{_n};
-        croak ("Tried to set $self to NaN in $class\::_bnan()");
+        Carp::croak ("Tried to set $self to NaN in $class\::_bnan()");
     }
     $self->{_n} = $LIB->_zero();
     $self->{_d} = $LIB->_zero();
@@ -755,7 +755,7 @@ sub _binf {
         # partial object (happens under trap_nan), so fix it beforehand
         $self->{_d} = $LIB->_zero() unless defined $self->{_d};
         $self->{_n} = $LIB->_zero() unless defined $self->{_n};
-        croak ("Tried to set $self to inf in $class\::_binf()");
+        Carp::croak ("Tried to set $self to inf in $class\::_binf()");
     }
     $self->{_n} = $LIB->_zero();
     $self->{_d} = $LIB->_zero();
@@ -1134,7 +1134,7 @@ sub is_one {
     # return true if arg (BRAT or num_str) is +1 or -1 if signis given
     my ($class, $x) = ref($_[0]) ? (undef, $_[0]) : objectify(1, @_);
 
-    croak "too many arguments for is_one()" if @_ > 2;
+    Carp::croak "too many arguments for is_one()" if @_ > 2;
     my $sign = $_[1] || '';
     $sign = '+' if $sign ne '-';
     return 1 if ($x->{sign} eq $sign &&
@@ -1685,8 +1685,8 @@ sub band {
     my $xref  = ref($x);
     my $class = $xref || $x;
 
-    croak 'band() is an instance method, not a class method' unless $xref;
-    croak 'Not enough arguments for band()' if @_ < 1;
+    Carp::croak 'band() is an instance method, not a class method' unless $xref;
+    Carp::croak 'Not enough arguments for band()' if @_ < 1;
 
     my $y = shift;
     $y = $class -> new($y) unless ref($y);
@@ -1709,8 +1709,8 @@ sub bior {
     my $xref  = ref($x);
     my $class = $xref || $x;
 
-    croak 'bior() is an instance method, not a class method' unless $xref;
-    croak 'Not enough arguments for bior()' if @_ < 1;
+    Carp::croak 'bior() is an instance method, not a class method' unless $xref;
+    Carp::croak 'Not enough arguments for bior()' if @_ < 1;
 
     my $y = shift;
     $y = $class -> new($y) unless ref($y);
@@ -1733,8 +1733,8 @@ sub bxor {
     my $xref  = ref($x);
     my $class = $xref || $x;
 
-    croak 'bxor() is an instance method, not a class method' unless $xref;
-    croak 'Not enough arguments for bxor()' if @_ < 1;
+    Carp::croak 'bxor() is an instance method, not a class method' unless $xref;
+    Carp::croak 'Not enough arguments for bxor()' if @_ < 1;
 
     my $y = shift;
     $y = $class -> new($y) unless ref($y);
@@ -1757,7 +1757,7 @@ sub bnot {
     my $xref  = ref($x);
     my $class = $xref || $x;
 
-    croak 'bnot() is an instance method, not a class method' unless $xref;
+    Carp::croak 'bnot() is an instance method, not a class method' unless $xref;
 
     my @r = @_;
 
@@ -1866,8 +1866,8 @@ sub beq {
     my $selfref = ref $self;
     my $class   = $selfref || $self;
 
-    croak 'beq() is an instance method, not a class method' unless $selfref;
-    croak 'Wrong number of arguments for beq()' unless @_ == 1;
+    Carp::croak 'beq() is an instance method, not a class method' unless $selfref;
+    Carp::croak 'Wrong number of arguments for beq()' unless @_ == 1;
 
     my $cmp = $self -> bcmp(shift);
     return defined($cmp) && ! $cmp;
@@ -1878,8 +1878,8 @@ sub bne {
     my $selfref = ref $self;
     my $class   = $selfref || $self;
 
-    croak 'bne() is an instance method, not a class method' unless $selfref;
-    croak 'Wrong number of arguments for bne()' unless @_ == 1;
+    Carp::croak 'bne() is an instance method, not a class method' unless $selfref;
+    Carp::croak 'Wrong number of arguments for bne()' unless @_ == 1;
 
     my $cmp = $self -> bcmp(shift);
     return defined($cmp) && ! $cmp ? '' : 1;
@@ -1890,8 +1890,8 @@ sub blt {
     my $selfref = ref $self;
     my $class   = $selfref || $self;
 
-    croak 'blt() is an instance method, not a class method' unless $selfref;
-    croak 'Wrong number of arguments for blt()' unless @_ == 1;
+    Carp::croak 'blt() is an instance method, not a class method' unless $selfref;
+    Carp::croak 'Wrong number of arguments for blt()' unless @_ == 1;
 
     my $cmp = $self -> bcmp(shift);
     return defined($cmp) && $cmp < 0;
@@ -1902,8 +1902,8 @@ sub ble {
     my $selfref = ref $self;
     my $class   = $selfref || $self;
 
-    croak 'ble() is an instance method, not a class method' unless $selfref;
-    croak 'Wrong number of arguments for ble()' unless @_ == 1;
+    Carp::croak 'ble() is an instance method, not a class method' unless $selfref;
+    Carp::croak 'Wrong number of arguments for ble()' unless @_ == 1;
 
     my $cmp = $self -> bcmp(shift);
     return defined($cmp) && $cmp <= 0;
@@ -1914,8 +1914,8 @@ sub bgt {
     my $selfref = ref $self;
     my $class   = $selfref || $self;
 
-    croak 'bgt() is an instance method, not a class method' unless $selfref;
-    croak 'Wrong number of arguments for bgt()' unless @_ == 1;
+    Carp::croak 'bgt() is an instance method, not a class method' unless $selfref;
+    Carp::croak 'Wrong number of arguments for bgt()' unless @_ == 1;
 
     my $cmp = $self -> bcmp(shift);
     return defined($cmp) && $cmp > 0;
@@ -1926,9 +1926,9 @@ sub bge {
     my $selfref = ref $self;
     my $class   = $selfref || $self;
 
-    croak 'bge() is an instance method, not a class method'
+    Carp::croak 'bge() is an instance method, not a class method'
         unless $selfref;
-    croak 'Wrong number of arguments for bge()' unless @_ == 1;
+    Carp::croak 'Wrong number of arguments for bge()' unless @_ == 1;
 
     my $cmp = $self -> bcmp(shift);
     return defined($cmp) && $cmp >= 0;
